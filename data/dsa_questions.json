@@ -1,0 +1,107 @@
+[
+  {
+    "topic": "Arrays",
+    "question": "What is the difference between an array and a linked list?",
+    "ideal_answer": "Arrays store elements in contiguous memory with O(1) random access but O(n) insertion and deletion. Linked lists store elements in nodes with pointers, allowing O(1) insertion and deletion but O(n) access time."
+  },
+  {
+    "topic": "Arrays",
+    "question": "What is a two pointer technique?",
+    "ideal_answer": "Two pointer technique uses two pointers moving through an array to solve problems efficiently. One common use is finding pairs with a target sum in a sorted array by moving one pointer from the start and another from the end."
+  },
+  {
+    "topic": "Arrays",
+    "question": "What is a sliding window technique?",
+    "ideal_answer": "Sliding window maintains a window of elements over an array that slides from left to right. It is used to find subarrays or substrings meeting a condition in O(n) time instead of O(n squared) by avoiding recomputing overlapping parts."
+  },
+  {
+    "topic": "Sorting",
+    "question": "What is the time complexity of quicksort?",
+    "ideal_answer": "Quicksort has average time complexity of O(n log n) and worst case O(n squared) when the pivot is always the smallest or largest element. It is in-place and generally faster than merge sort in practice due to better cache performance."
+  },
+  {
+    "topic": "Sorting",
+    "question": "What is the difference between quicksort and merge sort?",
+    "ideal_answer": "Quicksort is in-place with O(n log n) average but O(n squared) worst case. Merge sort is stable with guaranteed O(n log n) but requires O(n) extra space. Merge sort is preferred for linked lists and when stability is needed."
+  },
+  {
+    "topic": "Sorting",
+    "question": "What is bubble sort and what is its time complexity?",
+    "ideal_answer": "Bubble sort repeatedly compares adjacent elements and swaps them if they are in wrong order. It has O(n squared) time complexity in average and worst case, making it inefficient for large datasets. It is only useful for nearly sorted small arrays."
+  },
+  {
+    "topic": "Linked List",
+    "question": "How do you detect a cycle in a linked list?",
+    "ideal_answer": "Use Floyd's cycle detection algorithm with two pointers, slow and fast. Slow moves one step at a time; fast moves two steps. If they meet, a cycle exists. If fast reaches null, there is no cycle. Time complexity is O(n) with O(1) space."
+  },
+  {
+    "topic": "Linked List",
+    "question": "How do you reverse a linked list?",
+    "ideal_answer": "Iteratively reverse a linked list by maintaining three pointers: previous, current, and next. At each step, point current's next to previous, move previous to current, and current to next. Time complexity is O(n) with O(1) space."
+  },
+  {
+    "topic": "Stack and Queue",
+    "question": "What is the difference between a stack and a queue?",
+    "ideal_answer": "Stack follows LIFO (Last In First Out) where the last element added is removed first. Queue follows FIFO (First In First Out) where the first element added is removed first. Stack uses push and pop; queue uses enqueue and dequeue."
+  },
+  {
+    "topic": "Stack and Queue",
+    "question": "How do you implement a queue using two stacks?",
+    "ideal_answer": "Use two stacks, inbox and outbox. For enqueue, push to inbox. For dequeue, if outbox is empty, pop all elements from inbox into outbox, then pop from outbox. This gives amortized O(1) time for both operations."
+  },
+  {
+    "topic": "Trees",
+    "question": "What is the difference between BFS and DFS?",
+    "ideal_answer": "BFS explores all nodes level by level using a queue, good for finding shortest paths. DFS explores as far as possible along each branch using a stack or recursion, good for detecting cycles or topological sorting."
+  },
+  {
+    "topic": "Trees",
+    "question": "What is a binary search tree?",
+    "ideal_answer": "A binary search tree is a tree where each node has at most two children, with all left subtree values less than the node and all right subtree values greater. Search, insert, and delete are O(log n) average and O(n) worst case for unbalanced trees."
+  },
+  {
+    "topic": "Trees",
+    "question": "What is the difference between inorder, preorder and postorder traversal?",
+    "ideal_answer": "Inorder visits left, root, right and gives sorted output for BST. Preorder visits root, left, right and is used to copy a tree. Postorder visits left, right, root and is used to delete a tree or evaluate expression trees."
+  },
+  {
+    "topic": "Dynamic Programming",
+    "question": "What is dynamic programming?",
+    "ideal_answer": "Dynamic programming solves complex problems by breaking them into overlapping subproblems and storing results to avoid recomputation. It applies when a problem has optimal substructure and overlapping subproblems. Approaches are top-down memoization and bottom-up tabulation."
+  },
+  {
+    "topic": "Dynamic Programming",
+    "question": "What is the difference between memoization and tabulation?",
+    "ideal_answer": "Memoization is top-down dynamic programming that uses recursion and stores results of subproblems in a cache as they are computed. Tabulation is bottom-up and fills a table iteratively from smallest subproblems. Tabulation is usually faster; memoization is more intuitive."
+  },
+  {
+    "topic": "Dynamic Programming",
+    "question": "What is the Fibonacci sequence and how do you optimize it with DP?",
+    "ideal_answer": "Fibonacci sequence is where each number is the sum of the two preceding ones. Naive recursion is O(2 to the power n). With memoization or tabulation, each subproblem is solved once giving O(n) time. Space can be further optimized to O(1) using two variables."
+  },
+  {
+    "topic": "Searching",
+    "question": "What is binary search and what is its time complexity?",
+    "ideal_answer": "Binary search finds an element in a sorted array by repeatedly dividing the search space in half. It compares the target with the middle element and eliminates half the array each time. Time complexity is O(log n)."
+  },
+  {
+    "topic": "Searching",
+    "question": "What is the difference between linear search and binary search?",
+    "ideal_answer": "Linear search checks each element one by one with O(n) time and works on unsorted data. Binary search requires sorted data but is much faster with O(log n) time by halving the search space each step."
+  },
+  {
+    "topic": "Graphs",
+    "question": "What is the difference between directed and undirected graphs?",
+    "ideal_answer": "In a directed graph, edges have a direction from one vertex to another. In an undirected graph, edges have no direction and connections are bidirectional. Social networks use undirected graphs; web links use directed graphs."
+  },
+  {
+    "topic": "Graphs",
+    "question": "What is Dijkstra's algorithm used for?",
+    "ideal_answer": "Dijkstra's algorithm finds the shortest path from a source node to all other nodes in a weighted graph with non-negative edges. It uses a priority queue and has time complexity of O(V log V + E) with a min-heap."
+  },
+  {
+    "topic": "Hashing",
+    "question": "What is a hash table and how does it work?",
+    "ideal_answer": "A hash table stores key-value pairs using a hash function to compute an index into an array. It provides O(1) average time for insert, delete, and search. Collisions are handled using chaining or open addressing."
+  }
+]

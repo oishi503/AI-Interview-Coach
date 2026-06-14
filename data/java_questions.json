@@ -1,0 +1,107 @@
+[
+  {
+    "topic": "Java Basics",
+    "question": "What is the difference between JDK, JRE and JVM?",
+    "ideal_answer": "JVM is the Java Virtual Machine that executes bytecode. JRE is the Java Runtime Environment containing JVM plus libraries needed to run Java programs. JDK is the Java Development Kit containing JRE plus development tools like compiler and debugger."
+  },
+  {
+    "topic": "Java Basics",
+    "question": "What is the difference between == and .equals() in Java?",
+    "ideal_answer": "== compares object references in memory, checking if two variables point to the same object. .equals() compares the actual content or value of objects. For strings, always use .equals() to compare values."
+  },
+  {
+    "topic": "Java Basics",
+    "question": "What are the four pillars of OOP?",
+    "ideal_answer": "The four pillars are Encapsulation (hiding internal state), Inheritance (child class inheriting from parent), Polymorphism (same method behaving differently), and Abstraction (hiding implementation details and showing only functionality)."
+  },
+  {
+    "topic": "Java Basics",
+    "question": "What is the difference between abstract class and interface?",
+    "ideal_answer": "Abstract class can have method implementations and state. Interface can only have abstract methods (before Java 8) and constants. A class can implement multiple interfaces but extend only one abstract class."
+  },
+  {
+    "topic": "Java Basics",
+    "question": "What is method overloading vs method overriding?",
+    "ideal_answer": "Overloading is defining multiple methods with the same name but different parameters in the same class. Overriding is redefining a parent class method in a child class with the same signature. Overloading is compile-time polymorphism; overriding is runtime polymorphism."
+  },
+  {
+    "topic": "Java Collections",
+    "question": "What is the difference between ArrayList and LinkedList?",
+    "ideal_answer": "ArrayList uses a dynamic array and is faster for random access. LinkedList uses a doubly linked list and is faster for insertions and deletions. ArrayList is better for reading; LinkedList is better for frequent modifications."
+  },
+  {
+    "topic": "Java Collections",
+    "question": "What is the difference between HashMap and HashTable?",
+    "ideal_answer": "HashMap is not synchronized and allows one null key and multiple null values. HashTable is synchronized and thread-safe but slower, and does not allow null keys or values. HashMap is preferred in single-threaded applications."
+  },
+  {
+    "topic": "Java Collections",
+    "question": "What is the difference between HashSet and TreeSet?",
+    "ideal_answer": "HashSet stores elements using hashing with no guaranteed order and O(1) operations. TreeSet stores elements in sorted order using a red-black tree with O(log n) operations. Use HashSet for speed and TreeSet when sorted order is needed."
+  },
+  {
+    "topic": "Java Collections",
+    "question": "What is the difference between Iterator and ListIterator?",
+    "ideal_answer": "Iterator can traverse a collection only in forward direction and works with any collection. ListIterator can traverse in both forward and backward directions and is only for List implementations. ListIterator also allows adding and setting elements during iteration."
+  },
+  {
+    "topic": "Java Collections",
+    "question": "What is the difference between Comparable and Comparator?",
+    "ideal_answer": "Comparable is an interface implemented by the class itself to define natural ordering using compareTo(). Comparator is an external interface used to define custom ordering using compare(). Comparator is more flexible as it allows multiple sorting strategies."
+  },
+  {
+    "topic": "Exception Handling",
+    "question": "What is the difference between checked and unchecked exceptions?",
+    "ideal_answer": "Checked exceptions are checked at compile time and must be handled using try-catch or declared with throws. Unchecked exceptions are subclasses of RuntimeException and occur at runtime. Examples of checked are IOException; examples of unchecked are NullPointerException."
+  },
+  {
+    "topic": "Exception Handling",
+    "question": "What is the difference between throw and throws?",
+    "ideal_answer": "throw is used inside a method to explicitly throw an exception object. throws is used in the method signature to declare that the method may throw certain exceptions, alerting the caller to handle them."
+  },
+  {
+    "topic": "Exception Handling",
+    "question": "What is the finally block?",
+    "ideal_answer": "The finally block always executes after try and catch blocks regardless of whether an exception was thrown or caught. It is used for cleanup operations like closing database connections or file streams."
+  },
+  {
+    "topic": "Multithreading",
+    "question": "What is the difference between a process and a thread?",
+    "ideal_answer": "A process is an independent program with its own memory space. A thread is a lightweight unit of execution within a process that shares the same memory. Multiple threads in a process can run concurrently and share resources."
+  },
+  {
+    "topic": "Multithreading",
+    "question": "What is synchronization in Java?",
+    "ideal_answer": "Synchronization is a mechanism to control access to shared resources by multiple threads. Using the synchronized keyword ensures only one thread can access a method or block at a time, preventing race conditions and data inconsistency."
+  },
+  {
+    "topic": "Multithreading",
+    "question": "What is deadlock in Java?",
+    "ideal_answer": "Deadlock occurs when two or more threads are blocked forever, each waiting for the other to release a lock. It happens when threads acquire locks in different orders. Prevention involves acquiring locks in a consistent order or using timeout."
+  },
+  {
+    "topic": "Java 8 Features",
+    "question": "What are lambda expressions in Java?",
+    "ideal_answer": "Lambda expressions are anonymous functions introduced in Java 8 that provide a concise way to represent functional interfaces. They use the syntax (parameters) -> expression and enable functional programming style in Java."
+  },
+  {
+    "topic": "Java 8 Features",
+    "question": "What is the Stream API in Java?",
+    "ideal_answer": "The Stream API allows processing collections of objects in a functional style. It supports operations like filter, map, reduce, collect, and forEach. Streams are lazy, meaning intermediate operations are only executed when a terminal operation is called."
+  },
+  {
+    "topic": "Java 8 Features",
+    "question": "What is Optional in Java?",
+    "ideal_answer": "Optional is a container class introduced in Java 8 that may or may not contain a non-null value. It is used to avoid NullPointerException and makes the code more readable by explicitly handling the absence of a value."
+  },
+  {
+    "topic": "Java Basics",
+    "question": "What is the difference between String, StringBuilder and StringBuffer?",
+    "ideal_answer": "String is immutable; every modification creates a new object. StringBuilder is mutable and not thread-safe but faster. StringBuffer is mutable and thread-safe but slower. Use StringBuilder in single-threaded and StringBuffer in multi-threaded environments."
+  },
+  {
+    "topic": "Java Basics",
+    "question": "What is garbage collection in Java?",
+    "ideal_answer": "Garbage collection is the automatic process of reclaiming memory by removing objects that are no longer referenced. The JVM handles this automatically using algorithms like Mark and Sweep, allowing developers to focus on logic without manual memory management."
+  }
+]

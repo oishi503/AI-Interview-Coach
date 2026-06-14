@@ -1,0 +1,172 @@
+[
+  {
+    "topic": "Machine Learning",
+    "question": "What is Overfitting?",
+    "ideal_answer": "Overfitting occurs when a machine learning model learns the training data too well, including noise and outliers, leading to poor performance on unseen data."
+  },
+  {
+    "topic": "Machine Learning",
+    "question": "What is Underfitting?",
+    "ideal_answer": "Underfitting occurs when a model is too simple to capture patterns in the training data and performs poorly on both training and testing data."
+  },
+  {
+    "topic": "Machine Learning",
+    "question": "What is the difference between supervised and unsupervised learning?",
+    "ideal_answer": "Supervised learning uses labeled data to train models for classification or regression. Unsupervised learning finds hidden patterns in unlabeled data through clustering or dimensionality reduction."
+  },
+  {
+    "topic": "Machine Learning",
+    "question": "What is cross-validation?",
+    "ideal_answer": "Cross-validation evaluates model performance by splitting data into k folds, training on k-1 folds and testing on the remaining fold, repeated k times to get an average performance score."
+  },
+  {
+    "topic": "Machine Learning",
+    "question": "What is the bias-variance tradeoff?",
+    "ideal_answer": "Bias is error from wrong assumptions; variance is error from sensitivity to small data fluctuations. High bias causes underfitting, high variance causes overfitting. The tradeoff is finding the balance that minimizes total error."
+  },
+  {
+    "topic": "Machine Learning",
+    "question": "What is a confusion matrix?",
+    "ideal_answer": "A confusion matrix is a table showing predicted vs actual classifications. It contains true positives, true negatives, false positives, and false negatives, used to calculate accuracy, precision, recall, and F1 score."
+  },
+  {
+    "topic": "Machine Learning",
+    "question": "What is the difference between precision and recall?",
+    "ideal_answer": "Precision is the ratio of true positives to all predicted positives. Recall is the ratio of true positives to all actual positives. Precision measures correctness of positive predictions; recall measures coverage of actual positives."
+  },
+  {
+    "topic": "Deep Learning",
+    "question": "What is a neural network?",
+    "ideal_answer": "A neural network consists of layers of interconnected nodes including input, hidden, and output layers. It learns by adjusting weights through backpropagation to minimize prediction error."
+  },
+  {
+    "topic": "Deep Learning",
+    "question": "What is backpropagation?",
+    "ideal_answer": "Backpropagation calculates the gradient of the loss function with respect to each weight using the chain rule, propagating errors backward from output to input layer to update weights."
+  },
+  {
+    "topic": "Deep Learning",
+    "question": "What is a CNN and where is it used?",
+    "ideal_answer": "A Convolutional Neural Network uses convolutional layers to learn spatial features from data. It is primarily used in image recognition, object detection, and computer vision tasks."
+  },
+  {
+    "topic": "Deep Learning",
+    "question": "What is dropout in neural networks?",
+    "ideal_answer": "Dropout is a regularization technique where randomly selected neurons are ignored during training, preventing overfitting by forcing the network to learn redundant representations."
+  },
+  {
+    "topic": "Deep Learning",
+    "question": "What is the vanishing gradient problem?",
+    "ideal_answer": "The vanishing gradient problem occurs when gradients become extremely small as they propagate back through many layers, causing early layers to learn very slowly. It is addressed using ReLU activations or batch normalization."
+  },
+  {
+    "topic": "Deep Learning",
+    "question": "What is transfer learning?",
+    "ideal_answer": "Transfer learning reuses a model trained on one task as the starting point for a different but related task. It saves training time and works well with small datasets, commonly used with pretrained models like VGG, ResNet, or BERT."
+  },
+  {
+    "topic": "NLP",
+    "question": "What is tokenization?",
+    "ideal_answer": "Tokenization splits text into smaller units called tokens such as words, subwords, or characters. It is the first step in most NLP pipelines to convert raw text into processable units."
+  },
+  {
+    "topic": "NLP",
+    "question": "What is TF-IDF?",
+    "ideal_answer": "TF-IDF stands for Term Frequency-Inverse Document Frequency. TF measures how often a word appears in a document. IDF reduces weight of common words. Together they reflect how important a word is to a specific document."
+  },
+  {
+    "topic": "NLP",
+    "question": "What is word embedding?",
+    "ideal_answer": "Word embedding represents words as dense numerical vectors where semantically similar words are mapped close together in vector space. Examples include Word2Vec, GloVe, and FastText."
+  },
+  {
+    "topic": "NLP",
+    "question": "What is the transformer architecture?",
+    "ideal_answer": "The transformer is a deep learning architecture based on self-attention mechanisms that processes sequences in parallel. It consists of encoder and decoder blocks and is the foundation of modern LLMs like BERT and GPT."
+  },
+  {
+    "topic": "NLP",
+    "question": "What is the difference between stemming and lemmatization?",
+    "ideal_answer": "Stemming crudely chops word endings to get a root form which may not be a real word. Lemmatization uses vocabulary and grammar rules to return the proper base form. Lemmatization is more accurate but slower."
+  },
+  {
+    "topic": "NLP",
+    "question": "What is attention mechanism?",
+    "ideal_answer": "Attention mechanism allows a model to focus on relevant parts of the input when producing each output. It assigns weights to different input positions, enabling the model to capture long-range dependencies better than RNNs."
+  },
+  {
+    "topic": "Statistics",
+    "question": "What is the difference between mean, median and mode?",
+    "ideal_answer": "Mean is the average of all values. Median is the middle value when data is sorted. Mode is the most frequent value. Median is preferred for skewed data as it is less affected by outliers."
+  },
+  {
+    "topic": "Statistics",
+    "question": "What is standard deviation?",
+    "ideal_answer": "Standard deviation measures the spread of data points around the mean. Low standard deviation means data is close to the mean; high standard deviation means data is widely spread."
+  },
+  {
+    "topic": "Statistics",
+    "question": "What is the difference between correlation and causation?",
+    "ideal_answer": "Correlation means two variables move together statistically. Causation means one variable directly causes change in another. Correlation does not imply causation as a third variable may be responsible."
+  },
+  {
+    "topic": "Statistics",
+    "question": "What is a normal distribution?",
+    "ideal_answer": "A normal distribution is a symmetric bell-shaped probability distribution where mean, median and mode are equal. About 68% of data falls within one standard deviation and 95% within two standard deviations of the mean."
+  },
+  {
+    "topic": "Statistics",
+    "question": "What is p-value?",
+    "ideal_answer": "A p-value is the probability of obtaining results at least as extreme as observed, assuming the null hypothesis is true. A p-value below 0.05 typically means we reject the null hypothesis."
+  },
+  {
+    "topic": "Python",
+    "question": "What is the difference between a list and a tuple in Python?",
+    "ideal_answer": "Lists are mutable and use square brackets. Tuples are immutable and use parentheses. Tuples are faster and used for fixed data that should not change."
+  },
+  {
+    "topic": "Python",
+    "question": "What are Python decorators?",
+    "ideal_answer": "Decorators are functions that modify the behavior of another function without changing its source code. They use the @ symbol and are commonly used for logging, authentication, and timing."
+  },
+  {
+    "topic": "Python",
+    "question": "What is the difference between deep copy and shallow copy?",
+    "ideal_answer": "Shallow copy creates a new object but references the same nested objects. Deep copy creates a completely independent copy including all nested objects. Use copy.deepcopy() for deep copy."
+  },
+  {
+    "topic": "Python",
+    "question": "What are list comprehensions?",
+    "ideal_answer": "List comprehensions provide a concise way to create lists in a single line using an expression followed by a for clause and optional if clause inside square brackets."
+  },
+  {
+    "topic": "Python",
+    "question": "What is the difference between a generator and a list?",
+    "ideal_answer": "A list stores all elements in memory at once. A generator produces elements one at a time using the yield keyword and is memory efficient for large datasets as values are computed only when needed."
+  },
+  {
+    "topic": "Data Analysis",
+    "question": "What is the difference between loc and iloc in pandas?",
+    "ideal_answer": "loc selects data by label or boolean condition. iloc selects data by integer position. loc includes the end index while iloc excludes it."
+  },
+  {
+    "topic": "Data Analysis",
+    "question": "How do you handle missing values in a dataset?",
+    "ideal_answer": "Missing values can be handled by dropping rows or columns, filling with mean, median or mode, using forward or backward fill for time series, or using advanced techniques like KNN imputation."
+  },
+  {
+    "topic": "Data Analysis",
+    "question": "What is the purpose of feature scaling?",
+    "ideal_answer": "Feature scaling normalizes the range of features so no single feature dominates due to its scale. Methods include Min-Max normalization and StandardScaler. It is important for distance-based algorithms like KNN and SVM."
+  },
+  {
+    "topic": "Data Analysis",
+    "question": "What is an outlier and how do you detect it?",
+    "ideal_answer": "An outlier is a data point significantly different from other observations. Detection methods include the IQR method, Z-score method, and visual methods like box plots and scatter plots."
+  },
+  {
+    "topic": "Data Analysis",
+    "question": "What is the difference between wide and long format data?",
+    "ideal_answer": "Wide format has one row per subject with multiple columns for each variable. Long format has one row per observation. Pandas melt converts wide to long and pivot converts long to wide."
+  }
+]
