@@ -9,7 +9,7 @@ from database.db import (init_db, signup_user, login_user,
                           get_user_sessions, get_session_answers, get_user_stats)
 
 # ── Page config ──────────────────────────────────────────────
-st.set_page_config(page_title="AI Interview Coach", layout="centered")
+st.set_page_config(page_title="AI Interview Coach", page_icon="🤖", layout="centered")
 
 # ── Session state init ────────────────────────────────────────
 def init_state():
