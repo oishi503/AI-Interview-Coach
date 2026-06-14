@@ -1,7 +1,8 @@
 streamlit
+groq
 sentence-transformers
-google-generativeai
 plotly
 python-dotenv
 pdfplumber
 bcrypt
+torch
