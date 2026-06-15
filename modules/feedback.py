@@ -23,7 +23,7 @@ Rules:
 - Clarity: confusing=1-4, ok=5-7, clear and structured=8-10
 - Overall = (correctness*0.4 + depth*0.4 + clarity*0.2), calculate exactly
 - missing_points: only GENUINELY missing points. Never list "explanation" for code questions. Empty list only if score=10.
-- suggested_answer: write a complete explanation a student can learn from, not just topic headers. Include brief code examples where relevant. Use | to separate paragraphs.
+- suggested_answer: Write a complete answer AS IF you are a student answering the question. Start with a definition, explain the concept, include a short code example if relevant, and end with benefits or use cases. Do NOT write topic headers or a checklist. Write in full sentences. Use | to separate paragraphs.
 Return JSON only. All values must be on a single line. No line breaks inside any string value:
 {{"correctness_score":int,"depth_score":int,"clarity_score":int,"missing_points":["..."],"suggested_answer":"...","overall_score":int}}"""
 

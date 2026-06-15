@@ -996,13 +996,12 @@ elif st.session_state.page == "feedback":
 
     # ── Suggested answer ──
     with st.expander("💡 Suggested Answer"):
-        formatted = fb['suggested_answer'].replace('\\n', '\n').replace('\n', '<br>')
+        formatted = fb['suggested_answer'].replace('|', '<br><br>')
         st.markdown(f"""
         <div style="color:#c4b5fd; font-size:0.95rem; line-height:1.8; padding:0.5rem 0;">
             {formatted}
         </div>
         """, unsafe_allow_html=True)
-
     st.markdown("<br>", unsafe_allow_html=True)
 
     if idx + 1 >= total:
