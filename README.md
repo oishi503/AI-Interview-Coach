@@ -2,6 +2,8 @@
 
 An AI-powered mock interview platform that generates personalized interview questions, evaluates answers in real-time, and tracks your progress over time.
 
+**Live Demo:** [Click here to try the app](https://ai-interview-coach-9jmaema5qgzthtotl2ssh9.streamlit.app/)
+
 ## ✨ Features
 
 - **6 Interview Tracks** — AIML Engineer, Java Developer, DSA, OOPs, DBMS, Resume-Based
@@ -12,6 +14,15 @@ An AI-powered mock interview platform that generates personalized interview ques
 - **Progress Tracking** — Dashboard with topic-wise performance charts
 - **Weak Area Practice** — Targeted sessions based on your weak topics
 - **User Accounts** — Login/signup with session history saved to database
+
+## 📊 How It Works
+
+1. **Select a track** or upload your resume
+2. **Answer 7 questions** of mixed difficulty (Basic / Intermediate / Advanced)
+3. **Get instant feedback** — scores, missing points, suggested answer
+4. **View your report** — overall score, strengths, weak areas, topic chart
+5. **Practice weak areas** — targeted follow-up sessions
+6. **Track history** — all sessions saved to your profile
 
 ## 🛠 Tech Stack
 
@@ -47,3 +58,9 @@ An AI-powered mock interview platform that generates personalized interview ques
 ```
 
 ## 📁 Project Structure
+
+## 👩‍💻 Author
+
+**Oishi Bhattacharya**
+- GitHub: [@oishi503](https://github.com/oishi503)
+- Institute of Engineering and Management, Kolkata
